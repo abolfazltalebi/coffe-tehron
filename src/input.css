@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@layer base {
+  @font-face {
+    font-family: "IRANSansXVF";
+    src: url("../public/font/IRANSansXVF.ttf");
+  }
+  html,
+  body {
+    font-family: "IRANSansXVF", "vazir";
+  }
+}
+@layer components {
+  .header {
+    @apply bg-white/80 backdrop-filter backdrop-blur-sm fixed top-0 left-0 right-0 z-50 p-2 m-3 rounded-xl flex items-center justify-between gap-8;
+  }
+  .li-item{
+    @apply transition-all py-1 hover:border-b-2 hover:border-b-background hover:translate-y-[-5px];
+  }
+  .icon {
+    @apply bg-background p-2 rounded-full text-white transition-all hover:translate-y-[-5px];
+  }
+  .button{
+    @apply bg-button transition-all hover:bg-background text-white rounded-xl px-4 py-2.5;
+  }
+  .bg-label{
+    @apply bg-white/80 backdrop-filter backdrop-blur-sm;
+  }
+}
