@@ -19,6 +19,10 @@ module.exports = {
       fontFamily: {
         "estedad-vf": "Estedad-VF",
       },
+      container:{
+        padding:'2rem',
+        center:true,
+      }
     },
   },
   plugins: [],

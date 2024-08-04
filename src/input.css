@@ -27,4 +27,20 @@
   .bg-label{
     @apply bg-white/80 backdrop-filter backdrop-blur-sm;
   }
+  .bg-menu-list{
+    background: url('../public/images/backgrounds/background-menukist.png') no-repeat center center fixed;
+  }
+  .bg-tablighat{
+    background: url('../public/images/backgrounds/banner.png');
+    @apply bg-cover bg-center bg-no-repeat my-6;
+  }
+  .bg-box{
+    @apply bg-white rounded-lg shadow-lg relative p-4 transition-all hover:translate-y-[-10px] hover:scale-105
+  }
+  .bg-footer{
+    background: url('../public/images/backgrounds/background.png') repeat;
+  }
+  .bg-footer-item{
+    @apply bg-white/65 backdrop-blur-lg p-2 rounded-xl space-y-3 h-[350px];
+  }
 }
